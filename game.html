@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> 麻雀ゲーム</title>
+		<script src="game.js"></script>
+		<style>
+			.nakiDefault{
+				display:	block;
+			}
+		</style>
+	</head>
+	<body bgcolor="#ABCDEF">
+		<canvas id="gameboard" width="1200" height="900" bgcolor="#FFFFFF"></canvas><br>
+		<button type="button" id="start" onclick="start()">開始</button><br>
+		<!-- 捨て牌洗濯ボタン-->
+		<button type="button" id="b1" onclick="clPai(this.value)">1</button>
+		<button type="button" id="b2" onclick="clPai(this.value)">2</button>
+		<button type="button" id="b3" onclick="clPai(this.value)">3</button>
+		<button type="button" id="b4" onclick="clPai(this.value)">4</button>
+		<button type="button" id="b5" onclick="clPai(this.value)">5</button>
+		<button type="button" id="b6" onclick="clPai(this.value)">6</button>
+		<button type="button" id="b7" onclick="clPai(this.value)">7</button>
+		<button type="button" id="b8" onclick="clPai(this.value)">8</button>
+		<button type="button" id="b9" onclick="clPai(this.value)">9</button>
+		<button type="button" id="b10" onclick="clPai(this.value)">10</button>
+		<button type="button" id="b11" onclick="clPai(this.value)">11</button>
+		<button type="button" id="b12" onclick="clPai(this.value)">12</button>
+		<button type="button" id="b13" onclick="clPai(this.value)">13</button>
+		<button type="button" id="b14" onclick="clPai(this.value)">14</button>
+		<br>
+		<!-- 鳴きボタン -->
+		<div class=".nakiDefault">
+			<button type="button" onclick="pon()">ポン </button>
+			<button type="button" onclick="chi()">チー </button>
+			<button type="button" onclick="kan()">カン </button>
+			<button type="button" onclick="tsumo()">ツモ </button>
+			<button type="button" onclick="ron()">ロン </button>
+			<button type="button" onclick="reach()">リーチ </button>
+		</div>
+	</body>
+</html>
